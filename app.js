@@ -21,6 +21,62 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
 }
 
+// let left=document.querySelector('.fa-angle-left')
+// let right=document.querySelector('.fa-angle-right')
+
+// let opnoins=document.querySelector('.opnoins')
+// let item2=opnoins.getElementsByClassName('p1')
+// let counterlength=item2.length
+
+// for (let i = 0; i < item2.length; i++) {
+//   i.classList.remove('showc')
+  
+// }
+
+
+//   item2.item(n-1).classList.add("visible")
+
+
+
+  // left.addEventListener('click',(e) => {
+
+  //   console.log('left')
+
+  //   opnoins.append(item2[0])
+
+  //   item2[0+1].style.display='block'
+
+
+  // })
+
+
+  // right.addEventListener('click',(e) => {
+  //   console.log('right')
+
+  // })
+
+// function prevv(){
+
+//   for (let i = 0; i < item2.length; i++) {
+// console.log(item2[i])
+// if(item2[i].classList.contains('showc'))
+// item2[i].style.display='block'
+// item2[i+1].style.display='none'
+//   }
+
+// }
+// function nextt(){
+//   for (let i = 0; i < item2.length; i++) {
+//     console.log(item2[i])
+//     if(item2[i].classList.contains('showc'))
+//     item2[i].style.display='block'
+//     item2[i+1].style.display='none'
+//       }
+// }
+
+
+
+
 
 
 let slider_meals=document.getElementById('meals-slider')
@@ -61,3 +117,39 @@ salla.forEach(element => {
        
     })
 });
+
+
+function get_duplicate_elements(arr) {
+  // write your code here
+  let a=[]
+  for (let i = 0; i < arr.length; i++) {
+
+    for (let j = 0; j < i; j++) {
+      if (arr[i]==arr[j]){
+        // arr.append(arr[i]) 
+    
+        console.log(arr[i])
+a.push(arr[i])
+      
+    }
+  
+   }
+    
+  }
+  return a
+
+}
+
+
+console.log(get_duplicate_elements( [6,3,12,12]))
+
+
+
+let sidemenu=document.getElementById('sidemenu')
+
+console.log(sidemenu);
+function openmenu(){
+    // sidemenu.style.left='70%'
+    sidemenu.classList.toggle("test")
+    console.log('hello');
+}
